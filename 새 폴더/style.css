@@ -20,14 +20,95 @@ header{
 }
 
 .header_a:hover{
-
+    font-weight: bolder;
 }
 
 .header_login{
-    margin: 20px 100px;
+    margin: 20px 150px;
 }
 
 #header_img{
-    margin: 10px 100px;
+    margin: 10px 150px;
 }
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 8s infinite linear;
+}
+
+.slide:nth-child(1) {
+    background-image: url(./img/야구장1.jpg);
+    animation-delay: 0;
+}
+.slide:nth-child(2) {
+    background-image: url(./img/야구장2.jpg);
+    animation-delay: -2s;
+}
+.slide:nth-child(3) {
+    background-image: url(./img/야구장3.jpg);
+    animation-delay: -4s;
+}
+.slide:nth-child(4) {
+    background-image: url(./img/야구장4.jpg);
+    animation-delay: -6s;
+}
+
+@keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    26% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    93% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* footer */
+footer{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: solid rgb(190, 190, 190) 1px;
+}
+
+footer p{
+    color: rgb(150, 150, 150);
+}
+
+#footer_img{
+    margin: 25px 250px;
+}
+
+.footer_text{
+    margin: 20px 250px;
+}
+
+#footer_p{
+    margin-top: 40px;
+}
+
 
